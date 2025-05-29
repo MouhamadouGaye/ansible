@@ -1,0 +1,7 @@
+- name: Deploy Python Web App
+  hosts: webservers
+  become: true
+
+  roles:
+    - web
+

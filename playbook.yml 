@@ -1,0 +1,6 @@
+- name: Deploy FastAPI App
+  hosts: web
+  become: yes
+  roles:
+    - web
+

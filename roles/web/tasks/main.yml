@@ -1,0 +1,10 @@
+- name: Install dependencies
+  apt:
+    name: ['python3-pip', 'gunicorn']
+    update_cache: yes
+
+- name: Deploy app files
+  copy:
+    src: /local/path/to/your/app/
+    dest: /var/www/myapp/
+
